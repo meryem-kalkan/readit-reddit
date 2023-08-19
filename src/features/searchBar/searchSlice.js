@@ -9,14 +9,14 @@ const searchSlice = createSlice({
         menuDisplay: false,
     },
     reducers: {
-        setSearchBarDisplay: (state, action) => {
-            state.searchBarDisplay = action.payload;
+        setSearchBarDisplay: (state) => {
+            state.searchBarDisplay = !state.searchBarDisplay;
         },
         setSearchValue: (state, action) => {
             state.searchValue = action.payload;
         },
-        setMenuDisplay: (state, action) => {
-            state.menuDisplay = action.payload;
+        setMenuDisplay: (state) => {
+            state.menuDisplay = !state.menuDisplay;
         }
     }
 })
