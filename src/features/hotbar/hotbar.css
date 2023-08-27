@@ -1,0 +1,8 @@
+.hotbar {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    padding: 1rem; 
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}

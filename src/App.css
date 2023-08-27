@@ -1,0 +1,10 @@
+.main {
+    transition: transform .5s;
+    padding: 1rem;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.slidein {
+    transform: translateX(15rem);
+}
