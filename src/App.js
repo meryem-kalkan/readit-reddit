@@ -2,9 +2,8 @@ import React from 'react';
 import './App.css';
 import { Header } from './features/Header.js/Header';
 import { Menu } from './features/menu/menu';
-import { Hotbar } from './features/hotbar/hotbar';
-import { Posts } from './features/posts/posts';
 import { useSelector } from 'react-redux';
+import { Main } from './features/main/main';
 
 function App() {
   const menuDisplay = useSelector(state => state.search.menuDisplay);
@@ -13,9 +12,8 @@ function App() {
     <div className="App">
      <Header/> 
       <Menu/>
-      <div className={`main ${menuDisplay && 'slidein'}`}>
-      <Hotbar/>
-       <Posts/>
+       <div className={`main ${menuDisplay && 'slidein'}`}>
+      <Main/>
        </div>
     </div>
   );
