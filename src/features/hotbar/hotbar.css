@@ -6,3 +6,17 @@
     border-radius: 0.5rem;
     margin: 1rem 0;
 }
+
+.barLink {
+    margin-left: 0.4rem;
+    font-weight: 900;
+    color: #797777;
+}
+
+.barLink:hover {
+    opacity: 0.5;
+}
+
+.barLink:active {
+    color: blueviolet;
+}

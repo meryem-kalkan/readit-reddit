@@ -11,9 +11,11 @@ function App() {
   return (
     <div className="App">
      <Header/> 
+     <div id='menu-main'>
       <Menu/>
        <div className={`main ${menuDisplay && 'slidein'}`}>
       <Main/>
+       </div>
        </div>
     </div>
   );

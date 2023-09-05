@@ -8,3 +8,11 @@
 .slidein {
     transform: translateX(15rem);
 }
+
+:any-link {
+    text-decoration: none;
+}
+
+#menu-main {
+    display: flex;
+}

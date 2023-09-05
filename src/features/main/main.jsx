@@ -6,7 +6,6 @@ import { UniquePost } from "../../views/uniquepost/uniquePost";
 
 export const Main = () => {
     return (
-        
             <Routes>
                 <Route path="*" element={<PostsFeed/>}/>
             </Routes>
