@@ -3,7 +3,7 @@ import { Posts } from "../../features/posts/posts";
 
 export const PostsFeed = () => {
     return (
-        <div>
+        <div style={{minWidth: '38rem'}}>
         <Hotbar/>
         <Posts/>
         </div>
