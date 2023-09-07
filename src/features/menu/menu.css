@@ -2,11 +2,36 @@
     min-height: 100%;
     width: 0;
     background-color: #65019c;
-    transition: 0.5s;
-    text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    text-align: center;
 }
 
 .slide {
     width: 15rem;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    visibility: visible;
+}
+
+@keyframes slide-in {
+    0% { width: 0px; }
+    100% {}
+}
+
+.subreddits {
+    color: #000;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 13rem;
+    display: flex;
+    align-items: center;
+}
+
+.subreddits:hover {
+    opacity: 0.5;
 }

@@ -14,7 +14,6 @@ export const Post = ({post}) => {
 
     return (
         <div className='post'>
-      {console.log(post)}
         <p id='top-text'>{post.subreddit}  <span style={{fontWeight: 300}}>. {created} </span></p> 
         <p id='top-text' style={{fontWeight: 500}}>by {post.author} </p>
         <h2>{post.header}</h2>

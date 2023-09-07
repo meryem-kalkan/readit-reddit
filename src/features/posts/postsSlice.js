@@ -36,17 +36,12 @@ const postsSlice = createSlice({
             comment: post.data.num_comments,
             media: post.data.media,
             id: post.data.id,
-            post: post.data,
             url: post.data.url,
             post_hint: post.data.post_hint,
             selftext: post.data.selftext,
             is_gallery: post.data.is_gallery,
             gallery_data: post.data.gallery_data,
-            thumbnail: {
-                img: post.data.thumbnail,
-                width: post.data.thumbnail_width,
-                height: post.data.thumbnail_height
-            }
+            thumbnail: post.data.thumbnail
         }
         posts.push(newPost)
         });
