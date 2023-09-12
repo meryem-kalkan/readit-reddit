@@ -30,7 +30,8 @@ const menuSlice = createSlice({
                 let newSubreddit = {
                     display_name: subreddit.data.display_name,
                     id: subreddit.data.id,
-                    icon_img: subreddit.data.icon_img
+                    icon_img: subreddit.data.icon_img,
+                    url: subreddit.data.url
                 }
                 subreddits.push(newSubreddit)
             });

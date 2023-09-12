@@ -21,7 +21,7 @@ export const Menu = () => {
           {!subreddit.loading && subreddit.subreddits.length > 0 ? (
              subreddit.subreddits.map(subreddit => {
               return (
-                <Link className='subreddits' key={subreddit.id}>
+                <Link to={subreddit.url} className='subreddits' key={subreddit.id}>
                   {subreddit.icon_img && <img src={subreddit.icon_img} style={{width: '25px', height: '25px', marginRight: '0.4rem'}}/>}
                   {subreddit.display_name}
                 </Link>
