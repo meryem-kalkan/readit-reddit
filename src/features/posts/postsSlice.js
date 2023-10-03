@@ -41,7 +41,8 @@ const postsSlice = createSlice({
             selftext: post.data.selftext,
             is_gallery: post.data.is_gallery,
             gallery_data: post.data.gallery_data,
-            thumbnail: post.data.thumbnail
+            thumbnail: post.data.thumbnail,
+            link: post.data.permalink
         }
         posts.push(newPost)
         });

@@ -8,6 +8,8 @@ export const Main = () => {
     return (
             <Routes>
                 <Route path="*" element={<PostsFeed/>}/>
+                <Route path="/search" element={<SearchResultsPage/>}/>
+                <Route path="/r/:subreddit/comments/*" element={<UniquePost />} />
             </Routes>
        
     )

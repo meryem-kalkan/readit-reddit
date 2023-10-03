@@ -24,7 +24,7 @@ export const Post = ({post}) => {
         <p>{score}</p>
         <FontAwesomeIcon icon={faCircleDown} id='downvote'/>
         </div>
-        <Link className='comments'>
+        <Link to={post.link} className='comments'>
         <FontAwesomeIcon icon={faMessage} />
         <p>{comment}</p>
         </Link>
