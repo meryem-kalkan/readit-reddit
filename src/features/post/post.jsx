@@ -2,7 +2,7 @@ import './post.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { getFormattedNumber, getFormattedTime } from '../../utils/getFormattedData';
 import { getMediaPost } from '../../utils/getMediaPost';
 
@@ -10,7 +10,9 @@ export const Post = ({post}) => {
      const score = getFormattedNumber(post.score);
      const created = getFormattedTime(post.created);
      const comment = getFormattedNumber(post.comment);
-     const media = getMediaPost(post)
+     const media = getMediaPost(post);
+     const { pathname } = useLocation();
+     const isCommentsPage = pathname.includes('comments');
 
     return (
         <div className='post'>
@@ -24,10 +26,15 @@ export const Post = ({post}) => {
         <p>{score}</p>
         <FontAwesomeIcon icon={faCircleDown} id='downvote'/>
         </div>
+        { 
+        isCommentsPage ? 
+        <p className='comments'>Comments</p> 
+        :
         <Link to={post.link} className='comments'>
         <FontAwesomeIcon icon={faMessage} />
         <p>{comment}</p>
         </Link>
+        }
      </div>
     )
 }

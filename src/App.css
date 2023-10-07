@@ -2,7 +2,7 @@
     transition: transform .5s;
     padding: 1rem;
     max-width: 40rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .slidein {
