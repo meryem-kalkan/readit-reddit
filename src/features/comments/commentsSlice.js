@@ -52,6 +52,11 @@ const commentsSlice = createSlice({
             let newComment = {
                 comment: comment.data,
                 id: comment.data.id,
+                author: comment.data.author,
+                created: comment.data.created,
+                body: comment.data.body,
+                score: comment.data.score,
+                edited: comment.data.edited
             }
             comments.push(newComment)
         });
