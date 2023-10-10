@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchComments } from "./commentsSlice";
 import { Comment } from "../comment/comment";
 import { getFormattedNumber } from "../../utils/getFormattedData";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCommentSlash } from '@fortawesome/free-solid-svg-icons';
 
 export const Comments = () => {
     const dispatch = useDispatch();
@@ -25,7 +27,8 @@ export const Comments = () => {
         <div>error: {comment.error}</div>
        )
             
-       if (!comment.loading && comment.comments.length > 0) return (
+       if (!comment.loading && comment.comments.length > 0) {
+        return (
         <section>
          <Post post={post}/>   
          <section>
@@ -35,6 +38,13 @@ export const Comments = () => {
                 })}
          </section>
         </section>
+       )} else {
+        return (
+            <div style={{fontSize: '22px', display: 'flex', marginTop: '7rem', flexDirection: 'column'}}>
+              <FontAwesomeIcon icon={faCommentSlash} />
+              <p>No comments yet</p>
+            </div>
        )
+       }
        
 }

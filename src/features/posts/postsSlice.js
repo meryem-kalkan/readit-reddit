@@ -6,8 +6,8 @@ const initialState = {
     error: ''
 }
 
-export const fetchPosts = createAsyncThunk('post/fetchPosts', async() => {
-    const response = await fetch('https://www.reddit.com/r/popular.json')
+export const fetchPosts = createAsyncThunk('post/fetchPosts', async(url) => {
+    const response = await fetch(url)
     const jsonResponse = await response.json();
     return jsonResponse;
 })
