@@ -36,6 +36,11 @@ export const Comments = () => {
          {comment.comments.map(comment => {
                     return  <Comment comment={comment} key={comment.id}/>
                 })}
+                <a 
+                href={`https://www.reddit.com${pathname}`} 
+                target="_blank">
+                   View more comments on Reddit.com
+                </a>
          </section>
         </section>
        )} else {
