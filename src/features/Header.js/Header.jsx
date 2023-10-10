@@ -6,6 +6,7 @@ import { SearchBar } from '../searchBar/searchBar';
 import logo from './logo.png'
 import { setMenuDisplay, setSearchBarDisplay } from '../searchBar/searchSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 export const Header = () => {
@@ -16,7 +17,7 @@ export const Header = () => {
     return (
         <div className='header'>
          <FontAwesomeIcon icon={faBarsStaggered} style={{color: "#65019c",}} size='xl' className='icons' onClick={() => dispatch(setMenuDisplay())}/>
-         {searchBarDisplay ? <SearchBar/> : <div id='logo-text'><span>READ</span><img src={logo} id='logo'/><span>IT</span></div> }
+         {searchBarDisplay ? <SearchBar/> : <Link to="/" id='logo-text'><span>READ</span><img src={logo} id='logo'/><span>IT</span></Link> }
          <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#65019c",}} size='xl' className='icons' onClick={() => dispatch(setSearchBarDisplay())}/>
         </div>
     )
