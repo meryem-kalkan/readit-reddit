@@ -19,8 +19,7 @@ export const Post = ({post}) => {
         <p id='top-text'>{post.subreddit}  <span style={{fontWeight: 300}}>. {created} </span></p> 
         <p id='top-text' style={{fontWeight: 500}}>by {post.author} </p>
         <h2>{post.header}</h2>
-        {media}
-        {post.post_hint !== 'self' && <p>{post.selftext}</p>}
+        <div>{media}</div>
         <div className='vote'>
         <FontAwesomeIcon icon={faCircleDown} flip="both" id='upvote'/>
         <p>{score}</p>
