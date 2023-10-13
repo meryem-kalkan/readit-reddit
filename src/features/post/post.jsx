@@ -27,7 +27,7 @@ export const Post = ({post}) => {
         </div>
         { 
         isCommentsPage ? 
-        <p className='comments'>Comments</p> 
+        <p style={{marginLeft: '1.2rem', display: 'inline-block'}}>Comments</p> 
         :
         <Link to={post.link} className='comments'>
         <FontAwesomeIcon icon={faMessage} />
