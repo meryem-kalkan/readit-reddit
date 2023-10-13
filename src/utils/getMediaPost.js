@@ -8,7 +8,7 @@ export const getMediaPost = (post) => {
     } if (post.is_gallery) {
         return <img src={`https://i.redd.it/${post.gallery_data.items[0].media_id}.jpg`} className='postmedia'/>
     } if (post.post_hint === 'link') {
-        return <div className="linkpost"><a href={post.url} style={{textDecoration: 'underline', width: '25rem'}}>{post.url}</a> {post.thumbnail !== 'default' && <img src={post.thumbnail}/>}</div>
+        return <div className="linkpost"><a href={post.url} style={{textDecoration: 'underline', width: '25rem'}}>Link to external source</a> {post.thumbnail !== 'default' && <img src={post.thumbnail}/>}</div>
     } if (post.selftext) {
         return <Markdown>{post.selftext}</Markdown>
     }
