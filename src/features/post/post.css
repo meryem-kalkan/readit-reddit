@@ -1,10 +1,10 @@
 .postmedia {
-     height: 30rem;
+     max-height: 32rem;
+     max-width: 100%;
      margin-bottom: 1rem;
      border-radius: 0.5rem;
      display: block;
      margin: 1rem auto;
-     width: 85%;
    }
    
    .post {
@@ -12,6 +12,7 @@
        border-radius: 0.5rem;
        padding: 1rem;
        margin-bottom: 2rem;
+       overflow: scroll;
    }
    
    .vote {

@@ -4,10 +4,10 @@ export const getMediaPost = (post) => {
     if (post.post_hint === 'image') {
         return <img src={post.url} className='postmedia'/>
     } if (post.post_hint === 'hosted:video') {
-        return <video controls className='postmedia'><source src={post.media.reddit_video.hls_url} type="video/mp4"></source></video>
+        return <video controls className='postmedia'><source src={post.media.reddit_video.fallback_url} type="video/mp4"></source></video>
     } 
      if (post.post_hint === 'link' || post.is_gallery) {
-        return <div className="linkpost"><a href={post.url} style={{textDecoration: 'underline', width: '25rem'}}>Link to external source</a> {post.thumbnail !== 'default' && <img src={post.thumbnail}/>}</div>
+        return <div className="linkpost"><a href={post.url} style={{textDecoration: 'underline', width: '25rem'}}>{post.link}</a> {post.thumbnail !== 'default' && <img src={post.thumbnail}/>}</div>
     } if (post.selftext) {
         return <Markdown>{post.selftext}</Markdown>
     }

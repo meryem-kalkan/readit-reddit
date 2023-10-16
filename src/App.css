@@ -1,16 +1,14 @@
 .main {
     transition: transform .5s;
     padding: 1rem;
+    width: 100%;
     max-width: 40rem;
     margin: 0 auto;
 }
 
-.slidein {
-    transform: translateX(15rem);
-}
-
 :any-link {
     text-decoration: none;
+    line-break: anywhere;
 }
 
 #menu-main {
