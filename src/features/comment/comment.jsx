@@ -1,4 +1,3 @@
-import './comment.css';
 import { getFormattedTime, getFormattedNumber } from '../../utils/getFormattedData';
 import Markdown from 'markdown-to-jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
