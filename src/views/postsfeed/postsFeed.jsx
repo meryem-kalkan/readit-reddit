@@ -1,4 +1,4 @@
-import { Hotbar } from "../../features/hotbar/hotbar";
+import { Hotbar } from "../../components/hotbar/hotbar";
 import { Posts } from "../../features/posts/posts";
 
 export const PostsFeed = () => {

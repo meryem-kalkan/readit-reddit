@@ -1,9 +1,9 @@
-import { Post } from "../post/post";
+import { Post } from "../../components/post/post";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchComments } from "./commentsSlice";
-import { Comment } from "../comment/comment";
+import { Comment } from "../../components/comment/comment";
 import { getFormattedNumber } from "../../utils/getFormattedData";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentSlash } from '@fortawesome/free-solid-svg-icons';

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Header } from './features/Header.js/Header';
+import { Header } from './components/Header.js/Header';
 import { Menu } from './features/menu/menu';
 import { useSelector } from 'react-redux';
-import { Main } from './features/main/main';
+import { Main } from './components/main/main'
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 

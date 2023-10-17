@@ -2,9 +2,9 @@ import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { SearchBar } from '../searchBar/searchBar';
-import logo from './logo.png'
-import { setMenuDisplay, setSearchBarDisplay } from '../searchBar/searchSlice';
+import { SearchBar } from '../../features/searchBar/searchBar';
+import logo from './logo.png';
+import { setMenuDisplay, setSearchBarDisplay } from '../../features/searchBar/searchSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
