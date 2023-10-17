@@ -11,7 +11,7 @@ export const Menu = () => {
 
      useEffect(() => {
       dispatch(fetchSubreddits())
-     }, [])
+     }, [dispatch])
 
     return (
         <div className={`menu ${menuDisplay && 'slide'}`}>
@@ -22,7 +22,7 @@ export const Menu = () => {
              subreddit.subreddits.map(subreddit => {
               return (
                 <Link to={subreddit.url} className='subreddits' key={subreddit.id}>
-                  {subreddit.icon_img && <img src={subreddit.icon_img} style={{width: '25px', height: '25px', marginRight: '0.4rem'}}/>}
+                  {subreddit.icon_img && <img src={subreddit.icon_img} style={{width: '25px', height: '25px', marginRight: '0.4rem'}} alt='subreddit icon'/>}
                   {subreddit.display_name}
                 </Link>
               )

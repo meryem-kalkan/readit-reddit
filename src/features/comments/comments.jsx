@@ -17,7 +17,7 @@ export const Comments = () => {
 
      useEffect(() => {
       dispatch(fetchComments(pathname));
-     }, []);
+     }, [dispatch, pathname]);
 
        if (comment.loading) return (
        <div>loading ...</div>
@@ -38,7 +38,8 @@ export const Comments = () => {
                 })}
                 <a 
                 href={`https://www.reddit.com${pathname}`} 
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                    View more comments on Reddit.com
                 </a>
          </section>

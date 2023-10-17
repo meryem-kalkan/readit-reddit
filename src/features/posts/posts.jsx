@@ -14,7 +14,7 @@ export const Posts = () => {
 
     useEffect(() => {
         dispatch(fetchPosts(fetchUrl))
-    }, [fetchUrl]);
+    }, [dispatch, fetchUrl]);
 
     return (
         <div>

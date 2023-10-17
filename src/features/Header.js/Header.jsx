@@ -17,7 +17,7 @@ export const Header = () => {
     return (
         <div className='header'>
          <FontAwesomeIcon icon={faBarsStaggered} style={{color: "#65019c",}} size='xl' className='icons' onClick={() => dispatch(setMenuDisplay())}/>
-         {searchBarDisplay ? <SearchBar/> : <Link to="/" id='logo-text'><span>READ</span><img src={logo} id='logo'/><span>IT</span></Link> }
+         {searchBarDisplay ? <SearchBar/> : <Link to="/" id='logo-text'><span>READ</span><img src={logo} id='logo' alt='purple reddit logo'/><span>IT</span></Link> }
          <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#65019c",}} size='xl' className='icons' onClick={() => dispatch(setSearchBarDisplay())}/>
         </div>
     )

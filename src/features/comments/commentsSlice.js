@@ -17,8 +17,8 @@ const commentsSlice = createSlice({
     name: 'comment',
     initialState,
     extraReducers: builder => {
-     builder.
-     addCase(fetchComments.pending, state => {
+     builder
+     .addCase(fetchComments.pending, state => {
         state.loading = true
      })
      .addCase(fetchComments.fulfilled, (state, action) => {
