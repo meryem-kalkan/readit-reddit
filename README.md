@@ -12,7 +12,6 @@ READ IT is a minimalistic Reddit.com clone project build using Reddit JSON API. 
 * Redux
 * Git and GitHub
 * Command line and file navigation
-* Wireframing with Figma
 
 ## Screenshots
 
